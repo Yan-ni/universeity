@@ -1,0 +1,75 @@
+/**Navigation bar Mobile*/
+.navigation-bar {
+  nav {
+    h3 {
+      display: none;
+    }
+    ul {
+      list-style: none;
+      height: 10vh;
+      background-color: $navBarColor;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      a {
+        text-decoration: none;
+        padding: 10px;
+        &:hover {
+          color: #0077ff;
+          transition: color 0.4s;
+          cursor: pointer;
+        }
+        &.selected {
+          color: #0077ff;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+/**HOME Page Mobile*/
+.Home {
+  .university-news-title {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .university-news-list {
+    margin-bottom: 60px;
+    li {
+      list-style: none;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      overflow-wrap: normal;
+      &:nth-child(odd) {
+        background-color: $newsListColorOdd;
+      }
+      &:nth-child(even) {
+        background-color: $newsListColorEven;
+      }
+    }
+  }
+  #loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+/**Schedules Page Mobile*/
+.Schedules {
+  div {
+    margin: 20px 0;
+    h1 {
+      font-size: 1.375rem;
+    }
+  }
+}

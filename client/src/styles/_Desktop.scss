@@ -1,0 +1,70 @@
+$listRadius: 10px;
+
+/**comon css*/
+nav,
+.Schedules {
+  max-width: $maxWidth;
+  margin: auto;
+}
+/**Navigation bar Desktop*/
+.navigation-bar {
+  background-color: #252424;
+  width: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    h3 {
+      display: block;
+      color: #fff;
+    }
+  }
+  ul {
+    background-color: inherit;
+    width: 40%;
+    justify-content: space-between;
+  }
+}
+/**Home page Desktop*/
+.Home {
+  display: flex;
+  flex-direction: column;
+  .university-news-list {
+    width: 700px;
+    align-self: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    border-radius: $listRadius;
+    li:first-child {
+      border-top-left-radius: $listRadius;
+      border-top-right-radius: $listRadius;
+    }
+    li:last-child {
+      border-bottom-left-radius: $listRadius;
+      border-bottom-right-radius: $listRadius;
+    }
+  }
+  span {
+    margin: auto;
+  }
+}
+
+/**Schedules page Desktop*/
+.Schedules {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 45vh 45vh;
+  div {
+    h1 {
+      margin-left: 20px;
+    }
+    &:nth-child(odd) {
+      margin-right: 20px;
+      margin-left: -20px;
+    }
+    &:nth-child(even) {
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+$navBarColor: #252424;
+$newsListColorOdd: #12527c;
+$newsListColorEven: #2c75a7;
+$backgroundColor: #dadada;
+$maxWidth: 1366px;
+$responsive: 'min-width: 800px';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $backgroundColor;
+  min-height: 100vh;
+}
+
+@import './Mobile';
+
+@media ($responsive) {
+  @import './Desktop';
+}
